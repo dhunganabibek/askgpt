@@ -1,5 +1,5 @@
 {
-  "name": "askgpt",
+  "name": "gptask",
   "version": "1.0.0",
   "description": "Ask questions to GPT-3 from javascript or command line",
   "main": "index.js",
