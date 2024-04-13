@@ -1,0 +1,15 @@
+{
+  "name": "askgpt",
+  "version": "1.0.0",
+  "description": "Ask questions to GPT-3 from javascript or command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bibek Dhungana",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
