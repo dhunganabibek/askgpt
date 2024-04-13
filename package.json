@@ -1,6 +1,12 @@
 {
   "name": "gptask",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "bin": {
+    "gptask": "./index.js"
+  },
+  "git": {
+    "url": "https://github.com/dhunganabibek/gptask"
+  },
   "description": "Ask questions to GPT-3 from javascript or command line",
   "main": "index.js",
   "scripts": {
