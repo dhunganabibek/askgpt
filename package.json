@@ -1,6 +1,7 @@
 {
   "name": "gptask",
-  "version": "1.0.3",
+  "type": "module",
+  "version": "1.0.4",
   "bin": {
     "gptask": "./bin/index.js"
   },
