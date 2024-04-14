@@ -1,8 +1,8 @@
 {
   "name": "gptask",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "bin": {
-    "gptask": "./index.js"
+    "gptask": "./bin/index.js"
   },
   "git": {
     "url": "https://github.com/dhunganabibek/gptask"
@@ -17,5 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.7"
   }
 }
