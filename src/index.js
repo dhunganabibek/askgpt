@@ -1,17 +1,11 @@
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-function askGPT() {
-    return __awaiter(this, void 0, void 0, function* () {
-        console.log("Ask GPT");
-        return "Ask GPT";
-    });
+import puppeteer from "puppeteer";
+async function askGPT(message = ["How can i help you?"]) {
+    console.log("Launching gpt...");
+    const browser = await puppeteer.launch({ headless: false });
+    const page = await browser.newPage();
+    await page.goto("https://chat.openai.com/", { waitUntil: "networkidle0" });
+    await page.type("#prompt-textarea", message.join(" "));
+    await page.keyboard.press("Enter");
 }
 askGPT();
 export default askGPT;
