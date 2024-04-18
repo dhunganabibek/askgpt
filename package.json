@@ -1,7 +1,7 @@
 {
   "name": "gptask",
   "type": "module",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "bin": {
     "gptask": "./bin/gptask"
   },
@@ -18,6 +18,9 @@
   "author": "Bibek Dhungana",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
     "typescript": "^5.4.5"
   },
   "dependencies": {
